@@ -1,0 +1,6 @@
+- scene 1 (title): title is 83 characters; keep it under 80
+- scene 1 (title): 12 words in 3s is too fast to read; use at least 5.0s or cut words
+- scene 2 (statement): 19 words in 4s is too fast to read; use at least 7.5s or cut words
+- scene 3 (screenshot): cannot open image dashboard.png
+- scene 4 (features): items must be 2–4 texts of up to 90 characters
+- scene 5 (cta): unknown field(s) button

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "product": {"name": "Acme Analytics", "url": "acme.example"},
+  "style": "midnight",
+  "format": "landscape",
+  "scenes": [
+    {"type": "title", "title": "The fastest, simplest, most powerful analytics platform ever built for modern teams", "duration": 3},
+    {"type": "statement", "text": "Dashboards that update in real time, alerts that reach the right person, and reports your board will actually read.", "duration": 4},
+    {"type": "screenshot", "image": "dashboard.png", "caption": "The new dashboard"},
+    {"type": "features", "items": ["Fast"]},
+    {"type": "cta", "title": "Start free", "button": "Sign up"}
+  ]
+}

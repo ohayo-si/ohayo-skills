@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "product": {
+    "name": "SEO Release Check",
+    "url": "ohayo.si"
+  },
+  "style": "midnight",
+  "format": "landscape",
+  "fps": 30,
+  "scenes": [
+    {
+      "type": "title",
+      "eyebrow": "SEO Release Check",
+      "title": "Ship the build. Not the SEO bugs.",
+      "subtitle": "Your coding agent runs it before every deploy.",
+      "duration": 6
+    },
+    {
+      "type": "statement",
+      "eyebrow": "The problem",
+      "text": "One wrong canonical can quietly deindex a launch.",
+      "duration": 4.5
+    },
+    {
+      "type": "features",
+      "title": "What it checks",
+      "items": [
+        "Canonical and noindex conflicts",
+        "Sitemap URLs with no page",
+        "File and line for every finding"
+      ],
+      "duration": 7
+    },
+    {
+      "type": "screenshot",
+      "image": "product-page.jpg",
+      "caption": "Real output on the product page, before you buy.",
+      "focus": [
+        0.35,
+        0.5
+      ],
+      "duration": 4
+    },
+    {
+      "type": "cta",
+      "title": "Check your next release.",
+      "url": "ohayo.si/skills/seo-release-check",
+      "note": "Works with Claude Code and Codex.",
+      "duration": 4.5
+    }
+  ]
+}
