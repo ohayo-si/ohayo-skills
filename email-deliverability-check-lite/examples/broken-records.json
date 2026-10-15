@@ -1,0 +1,52 @@
+{
+  "_comment": "Example records using documentation addresses (RFC 5737/3849); include targets are simplified, not real provider values.",
+  "example.org MX": [
+    "10 mail.example.org"
+  ],
+  "example.org A": [
+    "192.0.2.20"
+  ],
+  "example.org TXT": [
+    "v=spf1 include:_spf.google.com include:sendgrid.net include:mailgun.org include:servers.mcsv.net include:old-crm.example a mx ptr ~all",
+    "v=spf1 include:zoho.com ~all"
+  ],
+  "_spf.google.com TXT": [
+    "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all"
+  ],
+  "_netblocks.google.com TXT": [
+    "v=spf1 ip4:198.51.100.0/24 ~all"
+  ],
+  "_netblocks2.google.com TXT": [
+    "v=spf1 ip6:2001:db8::/32 ~all"
+  ],
+  "_netblocks3.google.com TXT": [
+    "v=spf1 ip4:203.0.113.0/24 ~all"
+  ],
+  "sendgrid.net TXT": [
+    "v=spf1 ip4:198.51.100.128/25 ~all"
+  ],
+  "mailgun.org TXT": [
+    "v=spf1 include:_spf.mailgun.org include:_spf.eu.mailgun.org ~all"
+  ],
+  "_spf.mailgun.org TXT": [
+    "v=spf1 ip4:203.0.113.64/26 ~all"
+  ],
+  "_spf.eu.mailgun.org TXT": [
+    "v=spf1 ip4:203.0.113.128/26 ~all"
+  ],
+  "servers.mcsv.net TXT": [
+    "v=spf1 ip4:192.0.2.128/25 ~all"
+  ],
+  "zoho.com TXT": [
+    "v=spf1 ip4:192.0.2.64/26 ~all"
+  ],
+  "_dmarc.example.org TXT": [
+    "v=DMARC1; p=none; rua=mailto:reports@dmarc-vendor.example"
+  ],
+  "s1._domainkey.example.org TXT": [
+    "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDM/fb4o+mpB1yqDK2bOqnuk7htb3xunO6ak4e7OG4q02VjVn78n/V0ZqB87NzG2wyuewyDk00uCl2lipV2zbkukqeGpLuzVN/LcnM/nivm4YDdvpsFroQLjg+9NWU+D+DcYs6orxuw4koP4+nu/7+ztZcF/37x7NEP3lttM8Mi5wIDAQAB"
+  ],
+  "s2._domainkey.example.org TXT": [
+    "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjDJaCjSnrQsdmhoTkjEBEE6VAD4Bfg8dU5FwP8i8xFGQchEi7Ff2/A+eFaTmxv1PwaESoht/5v3gz/SNo39Z8pOL0hFGzMiBJmu3NolB/hk4wu/oVDJrHsbYNZ58QzTjGhKKBs7eOD6vYyZzJPkWmGPy\" \"frmkznOV8BWQqldwsuTdfQp84K9YAlGX0pMrcM1OYCMnEWn27ODYjMwVeq3sm7yNEFgg40yto3oGgQOwPDv4Y0dnblgtqFkxaP+ngHgeq5kXOxX7wI9bEqBDRu1mu/26CSk9hUVGu7zvBY4riDGiaVnBk+UMJKfEZADyfBlSjqmaot3CZQBm0/hcjm/tTwIDAQAB"
+  ]
+}

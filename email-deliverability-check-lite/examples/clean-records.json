@@ -1,0 +1,32 @@
+{
+  "_comment": "Example records using documentation addresses (RFC 5737/3849); include targets are simplified, not real provider values.",
+  "example.com MX": [
+    "10 mx1.example.com",
+    "20 mx2.example.com"
+  ],
+  "mx1.example.com A": [
+    "192.0.2.10"
+  ],
+  "mx2.example.com A": [
+    "192.0.2.11"
+  ],
+  "example.com TXT": [
+    "v=spf1 include:_spf.google.com ~all",
+    "google-site-verification=abc123"
+  ],
+  "_spf.google.com TXT": [
+    "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com ~all"
+  ],
+  "_netblocks.google.com TXT": [
+    "v=spf1 ip4:198.51.100.0/24 ~all"
+  ],
+  "_netblocks2.google.com TXT": [
+    "v=spf1 ip6:2001:db8::/32 ~all"
+  ],
+  "_dmarc.example.com TXT": [
+    "v=DMARC1; p=quarantine; rua=mailto:dmarc@example.com; adkim=r; aspf=r"
+  ],
+  "google._domainkey.example.com TXT": [
+    "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjDJaCjSnrQsdmhoTkjEBEE6VAD4Bfg8dU5FwP8i8xFGQchEi7Ff2/A+eFaTmxv1PwaESoht/5v3gz/SNo39Z8pOL0hFGzMiBJmu3NolB/hk4wu/oVDJrHsbYNZ58QzTjGhKKBs7eOD6vYyZzJPkWmGPyfrmkznOV8BWQqldwsuTdfQp84K9YAlGX0pMrcM1OYCMnEWn27ODYjMwVeq3sm7yNEFgg40yto3oGgQOwPDv4Y0dnblgtqFkxaP+ngHgeq5kXOxX7wI9bEqBDRu1mu/26CSk9hUVGu7zvBY4riDGiaVnBk+UMJKfEZADyfBlSjqmaot3CZQBm0/hcjm/tTwIDAQAB"
+  ]
+}
